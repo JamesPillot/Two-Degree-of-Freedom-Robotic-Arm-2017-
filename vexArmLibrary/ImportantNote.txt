@@ -1,0 +1,3 @@
+VexMotor cpp and header files written by another individual online who made this library publicly available to get a Vex 393 motor 
+to interface nicely with Arduino. I wrote the vexArm cpp and header files that sat on top of this addition to interact with
+the main files found outside of this directory on the main page of this repository. 
