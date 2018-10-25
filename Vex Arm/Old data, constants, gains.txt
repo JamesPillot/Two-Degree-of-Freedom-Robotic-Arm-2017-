@@ -1,0 +1,17 @@
+if (thetaOneTarget < 100.0 && thetaOneTarget > -50.0)
+  {
+    baseMotorsCommand(thetaOneTarget, //target
+                      4.0, .25, 0, //up
+                      2.7, .21, .28, //down
+                      0);//kv
+  }
+  /*Command elbow joint*/
+  if (thetaTwoTarget < 110.0 && thetaTwoTarget > -95.0)
+  {
+    elbowJoint.setTheta(thetaTwoTarget);
+    elbowJoint.setGains(1.7, .19, 0.26,  //up
+                        1.6, .18, 0.32, //down
+                        0); //kv
+  }
+
+jointPos = analogScale(analogRead(A1), 116, 988, 90, -90)
